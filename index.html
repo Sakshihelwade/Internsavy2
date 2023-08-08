@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Task2-website using html and css</title>
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+			font-family: sans-serif;
+		}
+		.bg{
+			position: relative;
+			width: 100%;
+			height: 100vh;
+			background-color: rgb(0, 0, 150);
+		}
+		.nav{
+			display: flex;
+			width: 84%;
+			margin: auto;
+			padding: 20px;
+			align-items: center;
+			justify-content: space-between;
+		}
+		.li{
+			display: inline-block;
+			list-style-type: none;
+			margin: 10px 20px;
+			color: white;
+		}
+		.a{
+			text-decoration: none;
+			color: black;
+			font-weight: bold;
+		}
+		.a:hover{
+			color: red;
+		} 
+		.details{
+			margin-left: 8%;
+			margin-top: 10%;
+			color: white;
+		}
+		.images{
+			width: 45%;
+			height: 80%;
+			position: absolute;
+			bottom: 0;
+			right: 100px;
+		}
+		.img1{
+			height: 100%;
+			position: absolute;
+			left: 50%;
+			bottom: 0;
+			transform: translate(-50%);
+			transition: bottom 1s,left 1s;
+		}
+		.img2{
+			width: 50%;
+			height: 100%;
+			position: absolute;
+			left: 50%;
+			bottom: 0%;
+			transform: translate(-50%);
+			transition: bottom 1s,left 1s;
+			z-index: 99999;
+			color: white;
+			font-size: 20px;
+			font-weight: bold;
+			line-height: 50px;
+		}
+		.img1:hover{
+			bottom: 40px;
+		}
+		.img2:hover{
+			left: 45%;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="bg">
+		<nav>
+			<ul class="ul">
+				<li class="li"><a href="" class="a"></a>Skills</li>
+				<li class="li"><a href="" class="a"></a>Interests</li>
+			</ul>
+		</nav>
+
+		<div class="details">
+			<div style="width:100px; height: 100px; border-radius: 50%;overflow: hidden;background-color: white;">
+				<img src="passport_Photo.jpg" style="width:100px;height: 100px;border-radius: 50%;overflow: hidden;align-items: center;">
+			</div>
+			<h1 style="margin-bottom: 20px;margin-top: 10px;">Hii.. I'm <span>Sakshi</span></h1>
+			<p style="line-height: 22px;">This is my official portfolio highlighting the <br><h3>Skills and Interest</p><h3></p>
+			<a href="" style="background-color:yellow;padding: 10px 18px; text-decoration: none; font-weight: bold; display: inline-block; margin: 30px 0; border-radius: 40px;color: darkblue;">Lets see </a>
+		</div>
+
+		<div class="images">
+			<img src="blue_img.png" class="img1">
+			<div class="img2">
+				<div style="width:50%;float: left;">
+					<h3>Skills</h3>
+					<ul>
+						<li>HTML</li>
+						<li>CSS</li>
+						<li>Bootstrap</li>
+						<li>JavaScript</li>
+						<li>AJAX</li>
+						<li>jQuery</li>
+					</ul>
+				</div>
+				<div style="width:50%;float: left;">
+					<h3>Interests</h3>
+				<ul>
+					<li>Designing</li>
+					<li>Photography</li>
+					<li>Browsing internet</li>
+					<li>Badminton</li>
+				</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
